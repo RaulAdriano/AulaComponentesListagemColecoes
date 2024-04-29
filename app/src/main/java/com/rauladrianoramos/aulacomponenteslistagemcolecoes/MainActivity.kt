@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
 
 
     fun clickBotao(view: View) {
+        Toast.makeText(this, "Sucesso", Toast.LENGTH_LONG).show()
+
         textResultado.text = "Raul Adriano Ramos"
     }
 }
