@@ -18,6 +18,15 @@ class Usuario(){
     val maiorIdade
         get() = idade >= 18
 }
+
+class Pessoa{
+    fun salvarTelefones(vararg telefones: String){
+        for (telefone in telefones){
+            println(telefone)
+        }
+
+    }
+}
 fun main() {
 
     val usuario = Usuario()
@@ -25,4 +34,20 @@ fun main() {
     usuario.idade = 31
 
     println("Nome: ${usuario.nome} - idade: ${usuario.idade} - Maior idade? ${usuario.maiorIdade}")
+
+    val pessoa = Pessoa()
+    pessoa.salvarTelefones(
+        "(44) 99999-9999",
+        "(44) 99999-9999",
+        "(44) 99999-9999",
+        "(44) 99999-9999",
+        "(44) 99999-9999",
+        "(44) 99999-9999",
+        "(44) 99999-9999",
+        "(44) 99999-9999",
+        "(44) 99999-9999",
+        "(44) 99999-9999",
+        "(44) 99999-9999",
+        "(44) 99999-9999",
+    )
 }
