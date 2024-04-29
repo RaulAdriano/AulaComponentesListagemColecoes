@@ -28,9 +28,17 @@ fun main() {
     val pergunta1 = Pergunta("Qual a pergunta?", 1)
     val pergunta2 = Pergunta("Qual a pergunta?", 1)
 
-    println(pergunta1)
-    println(pergunta2)
-    println(pergunta1 == pergunta2)
+    //desestruturação
+    val (pergunta,resposta) = pergunta1
+
+    //linha de codigo acima equivale ao trecho abaixo
+//    val p = pergunta1.pergunta
+//    val r = pergunta1.respostaCerta
+
+
+    println(pergunta)
+    println(resposta)
+
 }
 
 
